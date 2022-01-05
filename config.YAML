@@ -1,0 +1,26 @@
+rest_command:
+  pclight:
+    url: 'http://192.168.1.157:5000/--match/"smart/device"/set/sync/color/fixed/{{color1}}'
+    method: GET
+
+
+
+light:
+  - platform: template
+    lights:
+        pclight:
+            turn_on:
+                service: rest_command.pclight
+                data:
+                    command: fixed
+                    color1: 'ffffff'
+            turn_off:
+                service: rest_command.pclight
+                data:
+                    command: fixed
+                    color1: '000000'
+            set_color:
+                - service: rest_command.pclight
+                  data:
+                      command: fixed
+                      color1: "hsv({{h}},{{s}},100)"
