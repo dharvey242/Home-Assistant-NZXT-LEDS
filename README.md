@@ -4,6 +4,8 @@ Changing the colours of your NZXT PC via Home Assistant running WINDOWS 10
 A branch from SAM CROSS - https://gitlab.com/fsamjcross/nzxt-hue-home-homeassistant 
 ALL credit to Sam for the initial work on this project.  I have merely edited some minor parameters.
 
+NOTE - Look through the uploaded files to change file paths and IP addresses to your requirements
+
 Step by step guide to providing users with the option to change the LED colours on their NZXT pc running V2 Firmware.
 
 1. download https://github.com/liquidctl/liquidctl
