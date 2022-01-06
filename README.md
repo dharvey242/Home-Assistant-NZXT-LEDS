@@ -13,7 +13,7 @@ Step by step guide to providing users with the option to change the LED colours 
 3. copy index.js in to same folder as liquidctl
 4. Stop the native NZXT app from running i.e. exit if running and stop running on startup.  They can't work together with Liquidctl.
 5. Test that liquidctl can now send commands to your leds via CMD.  for example - liquidctl set sync color spectrum-wave
-6. Copy the YAML from the config.yaml in to your own configuration.YAML and change the IP address of your PC.  Restart Home Assistant
+6. Incorporate the YAML from the config.YAML in to your own configuration.yaml and change the IP address of your PC.  Restart Home Assistant
 7. Add the entity to HA once restarted to make a switch.
 8. Run the node server via CMD - node index.js
 9. Change a colour via HA and the command should be sent to CMD console and change the colour of the LED lights.
